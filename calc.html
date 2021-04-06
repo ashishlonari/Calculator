@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+     function Add(){
+         var a = document.getElementById('a').value;
+         var b = document.getElementById('b').value;
+         var sum = parseInt(a) + parseInt(b);
+         document.getElementById('result').value = sum;
+     }
+     function Sub(){
+         var a = document.getElementById('a').value;
+         var b = document.getElementById('b').value;
+         var sub = parseInt(a) - parseInt(b);
+         document.getElementById('result').value = sub;
+     }
+     function Mul(){
+         var a = document.getElementById('a').value;
+         var b = document.getElementById('b').value;
+         var mul = parseInt(a) * parseInt(b);
+         document.getElementById('result').value = mul;
+     }
+     function Div(){
+         var a = document.getElementById('a').value;
+         var b = document.getElementById('b').value;
+         var div = parseInt(a) / parseInt(b);
+         document.getElementById('result').value = div;
+     }
+
+    </script>
+    <style>
+            div{
+                width: 500 px;
+                background-color: grey;
+                position: absolute;
+                
+
+            } 
+    </style>
+</head>
+<body>
+<div class = "Calculator">
+  
+    <p>Calculator</p>
+    <p class = "text">Type Value 1
+    <input type = "text" id='a'></p>
+    <p class = "text">Type Value 2
+    <input type = "text" id='b'></p>
+    <br>
+    <button id="btn" onClick="Add() "> + </button> 
+    <button id="btn" onClick="Sub() "> - </button> 
+    <button id="btn" onClick="Mul() "> * </button> 
+    <button id="btn" onClick="Div() "> / </button> 
+
+    <p class = "result">Result
+    <input type = "text" id='result'></p>
+</div>
+</body>
+</html>
